@@ -9,10 +9,10 @@
 
 ### APIs: 
 ```
-  def flushToFile = logger ! Flush(system.getClass, "flush and clear immediately")
-  def error(logClass: Class[_], message: String, cause: Throwable) = logger ! Error(logClass, message, cause)
-  def error(logClass: Class[_], message: String) = logger ! new Error(logClass, message)
-  def warning(logClass: Class[_], message: String) = logger ! Warning(logClass, message)
-  def info(logClass: Class[_], message: String) = logger ! Info(logClass, message)
-  def debug(logClass: Class[_], message: String) = logger ! Debug(logClass, message)
+flushToFile
+error(logClass: Class[_], message: String, cause: Throwable)
+error(logClass: Class[_], message: String)
+warning(logClass: Class[_], message: String)
+info(logClass: Class[_], message: String)
+debug(logClass: Class[_], message: String)
 ```
